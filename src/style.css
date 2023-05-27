@@ -76,12 +76,27 @@ h1 img {
   justify-content: end;
 }
 
+.popup img {
+  align-self: center;
+  width: 50%;
+}
+
 .cards li img {
   width: 100%;
 }
 
+.popup h2 {
+  align-self: center;
+}
+
 .cards li h2 {
   align-self: center;
+}
+
+footer p {
+  color: white;
+  word-spacing: 6px;
+  letter-spacing: 2px;
 }
 
 .cards li p {
@@ -107,19 +122,7 @@ h1 img {
   color: white;
 }
 
-#see-more {
-  text-align: center;
-  border: solid 1px #888;
-  padding: 1rem;
-  cursor: default;
-}
-
-#see-more:hover {
-background-color: #888;
-color: yellow;
-}
-
-.popup{
+.popup {
   position: fixed;
   top: 3rem;
   left: 20%;
@@ -151,14 +154,6 @@ color: yellow;
 
 .close:hover {
   color: red;
-}
-.popup img {
-  align-self: center;
-  width: 50%;
-}
-
-.popup h2 {
-  align-self: center;
 }
 
 .features {
@@ -198,12 +193,6 @@ footer {
   left: 0;
   right: 0;
   padding: 1rem;
-}
-
-footer p {
-  color: white;
-  word-spacing: 6px;
-  letter-spacing: 2px;
 }
 
 ::-webkit-scrollbar {
