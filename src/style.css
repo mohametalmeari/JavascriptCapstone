@@ -8,7 +8,7 @@
   user-select: none;
 }
 
-main {
+.container {
   padding: 1rem;
 }
 
@@ -16,23 +16,48 @@ header {
   display: flex;
   align-items: baseline;
   gap: 2rem;
-  margin-bottom: 2rem;
+  padding: 0.6rem 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 black;
+}
+
+.logo {
+  flex: 1;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   color: red;
 }
 
 h1 img {
-  width: 35px;
+  width: 21px;
 }
 
 .menu {
   flex: 1;
-  display: flex;
+  display: none;
   justify-content: space-around;
   font-size: x-large;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background-color: lightsteelblue;
+  padding: 2rem;
+  order: 999;
+}
+
+.x-menu {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 .active {
@@ -60,8 +85,7 @@ h1 img {
 
 .cards {
   display: grid;
-  grid-template-columns: 23% 23% 23% 23%;
-  column-gap: 2.7%;
+  grid-template-columns: 100%;
   row-gap: 2rem;
 }
 
@@ -78,11 +102,12 @@ h1 img {
 
 .popup img {
   align-self: center;
-  width: 50%;
+  width: 100%;
 }
 
 .cards li img {
-  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .popup h2 {
@@ -94,9 +119,8 @@ h1 img {
 }
 
 footer p {
+  font-size: 14px;
   color: white;
-  word-spacing: 6px;
-  letter-spacing: 2px;
 }
 
 .cards li p {
@@ -124,16 +148,16 @@ footer p {
 
 .popup {
   position: fixed;
-  top: 3rem;
-  left: 20%;
-  right: 20%;
-  bottom: 6rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
   background-color: lightgoldenrodyellow;
   box-shadow: 1rem 1rem 3rem 0 darkslategrey;
   overflow-y: scroll;
   display: none;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
   order: 9999;
 }
@@ -158,7 +182,7 @@ footer p {
 
 .features {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   row-gap: 1rem;
 }
 
@@ -192,7 +216,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.6rem;
 }
 
 ::-webkit-scrollbar {
@@ -205,4 +229,63 @@ footer {
 
 ::-webkit-scrollbar-thumb {
   background-color: #888;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    grid-template-columns: 48% 48%;
+    column-gap:4%;
+  }
+
+  .features {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .cards {
+    grid-template-columns: 31.5% 31.5% 31.5% ;
+    column-gap: 2.75%;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  .logo {
+    flex: none;
+  }
+
+  .x-menu {
+    display: none;
+  }
+
+  .menu {
+    flex: 1;
+    display: flex;
+    position: static;
+    flex-direction: row;
+    padding: 1rem;
+    background: none;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+  
+  h1 img {
+    width: 35px;
+  }
+
+}
+
+@media only screen and (min-width: 992px){
+  .cards {
+    grid-template-columns: 23% 23% 23% 23% ;
+    column-gap: 2.67%;
+  }
+
+  .popup{
+    padding: 2rem;
+  }
 }

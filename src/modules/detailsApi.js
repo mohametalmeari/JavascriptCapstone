@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+=======
+import icon from '../images/pokemon-preview.gif';
+>>>>>>> screens-feature
 const PokeImg = document.querySelector('.poke-img');
 const PokeName = document.querySelector('.poke-name');
 const PokeFeatures = document.querySelector('.features');
 
+<<<<<<< HEAD
 const fetchDetailsApi = async (index, icon) => {
+=======
+const fetchDetailsApi = async (index) => {
+>>>>>>> screens-feature
   PokeName.innerHTML = 'Poké Name';
   PokeFeatures.innerHTML = `
     <li>Height: ?</li>
@@ -24,7 +32,11 @@ const fetchDetailsApi = async (index, icon) => {
     moves = `${json.moves[i].move.name}, `;
   }
   moves = moves.slice(0, -2);
+<<<<<<< HEAD
   PokeName.innerHTML = json.name;
+=======
+  PokeName.innerHTML = json.name.toUpperCase();
+>>>>>>> screens-feature
   PokeFeatures.innerHTML = `
     <li>Height: ${json.height / 10} m</li>
     <li>Weight: ${json.weight / 10} kg</li>
