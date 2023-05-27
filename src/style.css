@@ -65,7 +65,7 @@ h1 img {
   row-gap: 2rem;
 }
 
-.cards li {
+.card {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -73,6 +73,7 @@ h1 img {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 3px 3px 9px 0 darkgoldenrod;
+  justify-content: end;
 }
 
 .cards li img {
@@ -102,7 +103,7 @@ h1 img {
 .cards li button:hover {
   font-weight: bold;
   background-color: darkslategrey;
-  border: solid white 1px;
+  border: solid white 2px;
   color: white;
 }
 
@@ -127,7 +128,7 @@ color: yellow;
   background-color: lightgoldenrodyellow;
   box-shadow: 1rem 1rem 3rem 0 darkslategrey;
   overflow-y: scroll;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 2rem;
   gap: 2rem;
@@ -182,6 +183,10 @@ body:has(.popup:hover) {
 
 .popup form * {
   padding: 1rem;
+}
+
+textarea {
+  resize: vertical;
 }
 
 input:focus,
