@@ -1,3 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: darkslategrey;
+  font-family: 'Baumans', 'Courier New', Courier, monospace;
+  user-select: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
 h1 {
+  font-size: 50px;
   color: red;
+}
+
+h1 img {
+  width: 35px;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+
+.active {
+  border: solid 1px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.menu a {
+  margin: 0 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.menu a:hover {
+  border: solid 1px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  column-gap: 2.7%;
+  row-gap: 2rem;
+}
+
+.cards li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: yellow;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 9px 0 darkgoldenrod;
+}
+
+.cards li img {
+  width: 100%;
+}
+
+.cards li h2 {
+  align-self: center;
+}
+
+.cards li p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards li p a:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.cards li button {
+  padding: 1rem;
+  font-size: large;
+  border-radius: 0 1rem 1rem 1rem;
+}
+
+.cards li button:hover {
+  font-weight: bold;
+  background-color: darkslategrey;
+  border: solid white 1px;
+  color: white;
+}
+
+#see-more {
+  text-align: center;
+  border: solid 1px #888;
+  padding: 1rem;
+  cursor: default;
+}
+
+#see-more:hover {
+background-color: #888;
+color: yellow;
+}
+
+.popup{
+  position: fixed;
+  top: 3rem;
+  left: 20%;
+  right: 20%;
+  bottom: 6rem;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 1rem 1rem 3rem 0 darkslategrey;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  order: 9999;
+}
+
+body:has(.popup:hover) {
+  scroll-behavior: none;
+}
+
+.close {
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  background-color: lightgoldenrodyellow;
+  align-self: flex-start;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  text-align: center;
+  box-shadow: 0 0 1rem 1rem lightgoldenrodyellow;
+  cursor: default;
+}
+
+.close:hover {
+  color: red;
+}
+.popup img {
+  align-self: center;
+  width: 50%;
+}
+
+.popup h2 {
+  align-self: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+}
+
+.popup li {
+  padding-bottom: 1rem;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.popup form * {
+  padding: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: solid goldenrod;
+  border: solid yellow 1px;
+}
+
+footer {
+  position: sticky;
+  background-color: darkslategrey;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+footer p {
+  color: white;
+  word-spacing: 6px;
+  letter-spacing: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
 }

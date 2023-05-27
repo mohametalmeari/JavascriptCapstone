@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
+    <link rel="icon" href="./bf883b3c317f5d16fe00.png" type="image/x-icon">
+    <title>Pokémon</title>
 </head>
 <body>
-    <h1>Doc</h1>
+    <main>
+        <header>
+            
+            <a href=""><h1>P<img id="icon" alt="Icon">kémon</h1></a>
+            <ul class="menu">
+                <li>
+                    <a class="active" href="">Home Page</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>
+        </header>
+        <section class="container">
+            <ul class="cards">
+                <li>
+                    <img src="./bf883b3c317f5d16fe00.png" alt="Poke Image">
+                    <h2>Poke Name</h2>
+                    <p><span>(0) Likes</span><a>❤️</a></p>
+                    <button class="show-comments">Comment</button>
+                </li>
+            </ul>
+            <a id="see-more">See more ...</a>
+        </section>
+        <section class="popup">
+            <span class="close">✖</span>
+            <img src="./bf883b3c317f5d16fe00.png" alt="Poke Image">
+            <h2>
+                Poke Name
+            </h2>
+            <ul class="features">
+                <li>Height: 1m</li>
+                <li>Weight: 6.9 kg</li>
+                <li>Base Experience: 64</li>
+                <li>Abilities: overgrow, chlorophyll</li>
+                <li>Moves: razor-wind, swords-dance, cut</li>
+            </ul>
+            <h3>Comments (<span>3</span>)</h3>
+            <ul>
+                <li>2023-05-25 Alycia: It's the best show ever</li>
+                <li>2023-05-24 Sara: I like its color</li>
+                <li>2023-05-24 Rita: So cute</li>
+            </ul>
+            <h3>Add a comment</h3>
+            <form>
+                <input type="text" placeholder="Your name ...">
+                <textarea cols="30" rows="10" placeholder="Your insigts ..."></textarea>
+                <button>Comment</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>Created by Mo.Almeari under CC license</p>
+    </footer>
 </body>
 </html>
