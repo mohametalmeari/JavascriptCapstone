@@ -28,7 +28,7 @@ const createCards = (x = 0, NumOfCards = 32, icon) => {
       document.body.style.overflowY = 'hidden';
       const index = e.target.id.replace('show-comments', '');
       Popup.style.display = 'flex';
-      fetchDetailsApi(parseInt(index, 10) + 1, icon);
+      fetchDetailsApi(parseInt(index, 10) + 1);
       setIndex(index);
       getComments();
     }
