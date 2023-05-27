@@ -135,10 +135,6 @@ color: yellow;
   order: 9999;
 }
 
-body:has(.popup:hover) {
-  scroll-behavior: none;
-}
-
 .close {
   position: sticky;
   top: 0;

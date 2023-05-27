@@ -12,3 +12,5 @@ const NumOfCards = 32;
 createCards(0, NumOfCards, icon);
 
 fetchNamesApi(NumOfCards);
+
+
