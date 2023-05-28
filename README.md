@@ -73,7 +73,7 @@ Includes the following features...
 
 > Open the link bellow:
 
- - [Live Demo Link](https://shalininayan.github.io/Capstone-Kanban/)
+ - [Live Demo Link](https://mohametalmeari.github.io/JavascriptCapstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
