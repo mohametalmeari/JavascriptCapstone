@@ -12,17 +12,16 @@ fetchNamesApi(NumOfCards);
 
 const XMenu = document.querySelector('.x-menu');
 const Menu = document.querySelector('.menu');
-const menuIcon = document.querySelector('.menu-icon')
-XMenu.addEventListener('click', () =>{
-    Menu.style.display='none';
-    document.body.style.overflowY = 'scroll';
+const menuIcon = document.querySelector('.menu-icon');
+XMenu.addEventListener('click', () => {
+  Menu.style.display = 'none';
+  document.body.style.overflowY = 'scroll';
 });
 
 menuIcon.addEventListener('click', () => {
-    Menu.style.display='flex';
-    document.body.style.overflowY = 'hidden';
-})
-
+  Menu.style.display = 'flex';
+  document.body.style.overflowY = 'hidden';
+});
 
 const homeLink = document.getElementById('home-link');
 const contactLink = document.getElementById('contact-link');
@@ -32,37 +31,36 @@ const homePage = document.getElementById('home');
 const contactPage = document.getElementById('contact');
 const aboutPage = document.getElementById('about');
 
-homeLink.addEventListener('click', ()=>{
-    homePage.style.display = 'block';
-    contactPage.style.display = 'none';
-    aboutPage.style.display = 'none';
-    homeLink.classList = 'active';
-    contactLink.classList = '';
-    aboutLink.classList = '';
-    if (window.innerWidth < 768) {
-        Menu.style.display = 'none';  
-    }
-
-})
-contactLink.addEventListener('click', ()=>{
-    homePage.style.display = 'none';
-    contactPage.style.display = 'flex';
-    aboutPage.style.display = 'none';
-    homeLink.classList = '';
-    contactLink.classList = 'active';
-    aboutLink.classList = '';
-    if (window.innerWidth < 768) {
-        Menu.style.display = 'none';  
-    }
-})
-aboutLink.addEventListener('click', ()=>{
-    homePage.style.display = 'none';
-    contactPage.style.display = 'none';
-    aboutPage.style.display = 'flex';
-    homeLink.classList = '';
-    contactLink.classList = '';
-    aboutLink.classList = 'active';
-    if (window.innerWidth < 768) {
-        Menu.style.display = 'none';  
-    }
-})
+homeLink.addEventListener('click', () => {
+  homePage.style.display = 'block';
+  contactPage.style.display = 'none';
+  aboutPage.style.display = 'none';
+  homeLink.classList = 'active';
+  contactLink.classList = '';
+  aboutLink.classList = '';
+  if (window.innerWidth < 768) {
+    Menu.style.display = 'none';
+  }
+});
+contactLink.addEventListener('click', () => {
+  homePage.style.display = 'none';
+  contactPage.style.display = 'flex';
+  aboutPage.style.display = 'none';
+  homeLink.classList = '';
+  contactLink.classList = 'active';
+  aboutLink.classList = '';
+  if (window.innerWidth < 768) {
+    Menu.style.display = 'none';
+  }
+});
+aboutLink.addEventListener('click', () => {
+  homePage.style.display = 'none';
+  contactPage.style.display = 'none';
+  aboutPage.style.display = 'flex';
+  homeLink.classList = '';
+  contactLink.classList = '';
+  aboutLink.classList = 'active';
+  if (window.innerWidth < 768) {
+    Menu.style.display = 'none';
+  }
+});
