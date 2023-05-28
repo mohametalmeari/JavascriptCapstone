@@ -22,3 +22,37 @@ menuIcon.addEventListener('click', () => {
     Menu.style.display='flex';
     document.body.style.overflowY = 'hidden';
 })
+
+
+const homeLink = document.getElementById('home-link');
+const contactLink = document.getElementById('contact-link');
+const aboutLink = document.getElementById('about-link');
+
+const homePage = document.getElementById('home');
+const contactPage = document.getElementById('contact');
+const aboutPage = document.getElementById('about');
+
+homeLink.addEventListener('click', ()=>{
+    homePage.style.display = 'block';
+    contactPage.style.display = 'none';
+    aboutPage.style.display = 'none';
+    homeLink.classList = 'active';
+    contactLink.classList = '';
+    aboutLink.classList = '';
+})
+contactLink.addEventListener('click', ()=>{
+    homePage.style.display = 'none';
+    contactPage.style.display = 'block';
+    aboutPage.style.display = 'none';
+    homeLink.classList = '';
+    contactLink.classList = 'active';
+    aboutLink.classList = '';
+})
+aboutLink.addEventListener('click', ()=>{
+    homePage.style.display = 'none';
+    contactPage.style.display = 'none';
+    aboutPage.style.display = 'block';
+    homeLink.classList = '';
+    contactLink.classList = '';
+    aboutLink.classList = 'active';
+})
