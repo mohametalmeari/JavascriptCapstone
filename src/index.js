@@ -39,20 +39,30 @@ homeLink.addEventListener('click', ()=>{
     homeLink.classList = 'active';
     contactLink.classList = '';
     aboutLink.classList = '';
+    if (window.innerWidth < 768) {
+        Menu.style.display = 'none';  
+    }
+
 })
 contactLink.addEventListener('click', ()=>{
     homePage.style.display = 'none';
-    contactPage.style.display = 'block';
+    contactPage.style.display = 'flex';
     aboutPage.style.display = 'none';
     homeLink.classList = '';
     contactLink.classList = 'active';
     aboutLink.classList = '';
+    if (window.innerWidth < 768) {
+        Menu.style.display = 'none';  
+    }
 })
 aboutLink.addEventListener('click', ()=>{
     homePage.style.display = 'none';
     contactPage.style.display = 'none';
-    aboutPage.style.display = 'block';
+    aboutPage.style.display = 'flex';
     homeLink.classList = '';
     contactLink.classList = '';
     aboutLink.classList = 'active';
+    if (window.innerWidth < 768) {
+        Menu.style.display = 'none';  
+    }
 })
