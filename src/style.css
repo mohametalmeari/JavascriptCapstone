@@ -271,7 +271,7 @@ footer {
   background-color: #888;
 }
 
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .cards {
     grid-template-columns: 48% 48%;
     column-gap: 4%;
@@ -336,4 +336,4 @@ footer {
   .popup {
     padding: 2rem;
   }
-} */
+}
