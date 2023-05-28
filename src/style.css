@@ -18,14 +18,17 @@ body {
   padding: 1rem;
 }
 
-#contact {
+#contact,
+#about {
   flex: 1;
   display: none;
   padding: 1rem;
   background-color: lightgoldenrodyellow;
 }
-#about {
-  display: none;
+
+#about p {
+  font-size: x-large;
+  text-align: justify;
 }
 
 main{
@@ -320,7 +323,8 @@ footer {
     width: 50%;
   }
 
-  #contact {
+  #contact,
+  #about {
     padding: 1rem 10%;
   }
 

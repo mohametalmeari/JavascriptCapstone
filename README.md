@@ -36,7 +36,7 @@
 
 # 📖 Pokémon <a name="about-project"></a>
 
-**Pokémon** Pokémon website is a hub for enthusiasts to explore a vast collection of Pokés. With engaging discussions and updates on new releases, it's a go-to platform for staying connected to the Pokémon community. 
+**Pokémon** website is a hub for enthusiasts to explore a vast collection of Pokés. With engaging discussions and updates on new releases, it's a go-to platform for staying connected to the Pokémon community. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
