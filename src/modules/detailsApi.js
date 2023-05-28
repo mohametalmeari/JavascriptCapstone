@@ -1,4 +1,5 @@
 import icon from '../images/pokemon-preview.gif';
+
 const PokeImg = document.querySelector('.poke-img');
 const PokeName = document.querySelector('.poke-name');
 const PokeFeatures = document.querySelector('.features');

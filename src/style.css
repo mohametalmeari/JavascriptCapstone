@@ -16,19 +16,35 @@ body {
 
 .container {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-#contact {
+#contact,
+#about {
   flex: 1;
   display: none;
   padding: 1rem;
   background-color: lightgoldenrodyellow;
 }
-#about {
-  display: none;
+
+footer p {
+  font-size: 14px;
+  color: white;
 }
 
-main{
+.cards li p {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about p {
+  font-size: x-large;
+  text-align: justify;
+}
+
+main {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -99,12 +115,6 @@ h1 img {
   margin: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .cards {
   display: grid;
   grid-template-columns: 100%;
@@ -138,16 +148,6 @@ h1 img {
 
 .cards li h2 {
   align-self: center;
-}
-
-footer p {
-  font-size: 14px;
-  color: white;
-}
-
-.cards li p {
-  display: flex;
-  justify-content: space-between;
 }
 
 .cards li p a:hover {
@@ -239,7 +239,8 @@ textarea:focus {
   flex-direction: column;
   gap: 1rem;
 }
-.media{
+
+.media {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -247,8 +248,8 @@ textarea:focus {
 
 .fa {
   font-size: xx-large;
-  
 }
+
 footer {
   position: sticky;
   background-color: darkslategrey;
@@ -270,10 +271,10 @@ footer {
   background-color: #888;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .cards {
     grid-template-columns: 48% 48%;
-    column-gap:4%;
+    column-gap: 4%;
   }
 
   .features {
@@ -281,13 +282,13 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .cards {
-    grid-template-columns: 31.5% 31.5% 31.5% ;
+    grid-template-columns: 31.5% 31.5% 31.5%;
     column-gap: 2.75%;
   }
 
-  .menu-icon{
+  .menu-icon {
     display: none;
   }
 
@@ -311,7 +312,7 @@ footer {
   h1 {
     font-size: 50px;
   }
-  
+
   h1 img {
     width: 35px;
   }
@@ -320,19 +321,19 @@ footer {
     width: 50%;
   }
 
-  #contact {
+  #contact,
+  #about {
     padding: 1rem 10%;
   }
-
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
   .cards {
-    grid-template-columns: 23% 23% 23% 23% ;
+    grid-template-columns: 23% 23% 23% 23%;
     column-gap: 2.67%;
   }
 
-  .popup{
+  .popup {
     padding: 2rem;
   }
-}
+} */
