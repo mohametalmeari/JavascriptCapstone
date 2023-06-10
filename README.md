@@ -183,7 +183,7 @@ We invite you to share this project with others and provide a favorable review i
 
 ## 🙏 Acknowledgments <a name="acknowlednpments"></a>
 
-> The original design idea for this web page was created by Microverse Team.
+> This project is an enhanced version of a pair programming project originally developed by Mohamad and Shalini during their collaboration. It builds upon the foundation of the Capstone-Kanban repository, which can be found at the following link: [GitHub - Capstone-Kanban](https://github.com/ShaliniNayan/Capstone-Kanban). The enhanced version includes additional features and improvements implemented by Mohamad.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
