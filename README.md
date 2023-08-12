@@ -21,6 +21,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
@@ -28,7 +29,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowlednpments](#acknowlednpments)
+- [🙏 Acknowledgements](#acknowlednpments)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
@@ -36,13 +37,11 @@
 
 # 📖 Pokémon <a name="about-project"></a>
 
-**Pokémon** website is a hub for enthusiasts to explore a vast collection of Pokés. With engaging discussions and updates on new releases, it's a go-to platform for staying connected to the Pokémon community. 
+**Pokémon** website is a Pokémon's cards hub for enthusiasts to explore a vast collection of Pokés. With engaging discussions and updates on new releases, it's a go-to platform for staying connected to the Pokémon community. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Our tech stack consisting of HTML, CSS and JavaScript for the front-end.
 
 <details>
   <summary>Client</summary>
@@ -56,9 +55,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Key Features of Pokémon Website
-
-
 Includes the following features...
 
 - **Display Cool Pokes Images**
@@ -71,8 +67,6 @@ Includes the following features...
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Open the link bellow:
-
  - [Live Demo Link](https://mohametalmeari.github.io/JavascriptCapstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -81,18 +75,14 @@ Includes the following features...
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> A new developer can use this project as a guide to creating a list of tasks.
-
 To get a local copy up and running, follow these steps.
-
 
 ### Prerequisites
 
 In order to run this project you need:
 
 ```sh
-  npm run build
-  npm start
+  npm install
 ```
 
 ### Setup
@@ -102,32 +92,38 @@ Clone this repository to your desired folder:
 ```sh
   cd my-folder
   git clone https://github.com/mohametalmeari/JavascriptCapstone.git
+
+```
+### Install
+
+Install this project with:
+
+```sh
+  cd my-project
+  npm run build
 ```
 
 ### Usage
 
-How to open your project in the browser? 
-Double click on HTML file and the HTML file will be open in your browser.
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
 
 ### Run tests
 
 To run tests, run the following command:
 
 ```sh
-  npm install --save-dev jest
-  npm install --save-dev @babel/plugin-transform-modules-commonjs
-  npm install --save-dev jest-environment-jsdom
-  npm install jquery
-  npm install --save-dev identity-obj-proxy
   npm test
-```
+``` 
 
 ### Deployment
 
 You can deploy this project using:
 
 ```sh
-  npm install gh-pages
   npm run deploy 
 ```
 
@@ -137,13 +133,11 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> This project was done by Mohamad.
+👤 **Mohamad**
 
-👤 **Mohamad Almeari**
-
-- GitHub: [@githubhandle](https://github.com/mohametalmeari)
-- Twitter: [@twitterhandle](https://twitter.com/MohametAlmeari)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamet-almeari)
+- GitHub: [@mohametalmeari](https://github.com/mohametalmeari)
+- Twitter: [@MohametAlmeari](https://twitter.com/MohametAlmeari)
+- LinkedIn: [mohamet-almeari](https://www.linkedin.com/in/mohamet-almeari)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,15 +167,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Share and Review!
-
 We invite you to share this project with others and provide a favorable review if you find it to be useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDnpmENTS -->
+<!-- ACKNOWLEDGMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowlednpments"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > This project is an enhanced version of a pair programming project originally developed by Mohamad and Shalini during their collaboration. It builds upon the foundation of the Capstone-Kanban repository, which can be found at the following link: [GitHub - Capstone-Kanban](https://github.com/ShaliniNayan/Capstone-Kanban). The enhanced version includes additional features and improvements implemented by Mohamad.
 
